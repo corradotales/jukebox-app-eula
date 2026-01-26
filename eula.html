@@ -30,6 +30,25 @@
     including a unique QR code that can be activated for 24-hour periods. Sessions include 
     configuration data (language, playlist, images, social links).
   </li>
+  <ul>
+  <li>
+    <strong>Verified Account</strong>: An account that has successfully completed the 
+    email verification process, granting access to all platform features including 
+    QR code activation and song request management.
+  </li>
+  <li>
+    <strong>Unverified Account</strong>: An account that has not completed or is 
+    pending email verification, with restricted access to certain features.
+  </li>
+  <li>
+    <strong>Verification Code</strong>: A temporary 8-character alphanumeric code 
+    sent via email to confirm account ownership and enable full platform access.
+  </li>
+  <li>
+    <strong>Verification Session</strong>: A time-limited (10-minute) process 
+    during which a verification code is valid for account confirmation.
+  </li>
+</ul>
   <li>
     <strong>PDF Generation</strong>: The process of creating printable documents containing 
     QR codes and event information. Available in two formats: Complete PDF (with instructions) 
@@ -127,20 +146,139 @@
   <li>Backing up important chat information if needed</li>
 </ul>
 
-<h2>5. QR Code Generation and Management</h2>
+  <h2>5. Account Verification System</h2>
 
-<h3>5.1 QR Code Creation and Usage</h3>
+<h3>5.1 Verification Requirement</h3>
+<p>
+  To ensure platform security, prevent abuse, and maintain service quality, certain 
+  features require account verification. By using the App, you acknowledge and agree that:
+</p>
+<ul>
+  <li>
+    Account verification via email is <strong>mandatory</strong> to activate QR codes 
+    for receiving song requests
+  </li>
+  <li>
+    Unverified accounts have <strong>limited functionality</strong> as described below
+  </li>
+  <li>
+    Verification may be required <strong>periodically</strong> or when suspicious 
+    activity is detected
+  </li>
+  <li>
+    We reserve the right to <strong>require re-verification</strong> for security purposes
+  </li>
+</ul>
+
+<h3>5.2 Feature Access Based on Verification Status</h3>
+<p>
+  <strong>Unverified Accounts CAN:</strong>
+</p>
+<ul>
+  <li>Create and customize QR codes</li>
+  <li>Configure event settings (language, playlist, images, social links)</li>
+  <li>Download QR codes as PDF documents or image files</li>
+  <li>Preview QR code configurations and public pages</li>
+  <li>Use JukeBOT and JukeShorts features (subject to their respective terms)</li>
+  <li>Purchase and manage Credits</li>
+</ul>
+
+<p>
+  <strong>Unverified Accounts CANNOT:</strong>
+</p>
+<ul>
+  <li>Activate QR codes for receiving song requests</li>
+  <li>Access the song request management interface</li>
+  <li>Receive real-time notifications from active QR sessions</li>
+  <li>View or manage incoming song requests</li>
+  <li>Use QR codes for live event functionality</li>
+</ul>
+
+<h3>5.3 Verification Process</h3>
+<p>
+  The verification process requires:
+</p>
+<ul>
+  <li>
+    A valid, accessible email address associated with your account
+  </li>
+  <li>
+    <strong>Manual entry</strong> of the 8-character verification code (copy-paste disabled 
+    for security)
+  </li>
+  <li>
+    Completion within <strong>10 minutes</strong> of code generation
+  </li>
+  <li>
+    A maximum of <strong>3 failed attempts</strong> per verification code
+  </li>
+  <li>
+    Waiting period of <strong>10 minutes</strong> before requesting a new code
+  </li>
+</ul>
+
+<h3>5.4 Verification Code Security</h3>
+<p>
+  You agree to:
+</p>
+<ul>
+  <li>Keep verification codes <strong>confidential</strong> and not share them</li>
+  <li>Use verification codes only for your own account verification</li>
+  <li>Not attempt to automate or bypass the verification system</li>
+  <li>Report any suspicious verification attempts to support immediately</li>
+  <li>Use only your own valid email address for verification</li>
+</ul>
+
+<h3>5.5 Consequences of Verification Bypass Attempts</h3>
+<p>
+  Attempts to circumvent the verification system constitute a <strong>material breach</strong> 
+  of this Agreement and may result in:
+</p>
+<ul>
+  <li>Immediate account suspension or termination</li>
+  <li>Forfeiture of all purchased Credits</li>
+  <li>Permanent ban from the platform</li>
+  <li>Legal action for damages caused by such attempts</li>
+</ul>
+
+<h3>5.6 Verification Requirements Justification</h3>
+<p>
+  The verification requirement is implemented based on:
+</p>
+<ul>
+  <li>
+    <strong>Risk Assessment</strong>: QR code activation poses higher abuse potential 
+    than other features
+  </li>
+  <li>
+    <strong>Resource Protection</strong>: Preventing spam protects server resources 
+    for legitimate users
+  </li>
+  <li>
+    <strong>User Experience</strong>: Ensuring quality service without interference 
+    from automated systems
+  </li>
+  <li>
+    <strong>Legal Compliance</strong>: Meeting platform safety requirements and 
+    anti-bot regulations
+  </li>
+</ul>
+
+<h2>6. QR Code Generation and Management</h2>
+
+<h3>6.1 QR Code Creation and Usage</h3>
 <p>
   The App allows you to create QR codes for musical events with the following conditions:
 </p>
 <ul>
   <li>Each QR code session consumes <strong>1 Credit</strong> after the free allocation is exhausted</li>
   <li>QR codes are <strong>time-limited</strong> and can be activated for 24-hour periods</li>
+  <li>QR code activation <strong>requires verified account status</strong> as per Section 6</li>
   <li>Each QR code contains a unique session identifier linking to your event configuration</li>
   <li>QR codes do not contain personal email addresses or identifying information</li>
 </ul>
 
-<h3>5.2 PDF Generation Features</h3>
+<h3>6.2 PDF Generation Features</h3>
 <p>
   The App provides two types of printable PDF documents:
 </p>
@@ -167,7 +305,7 @@
   <li>Available for immediate download after QR code creation</li>
 </ul>
 
-<h3>5.3 Session Management</h3>
+<h3>6.3 Session Management</h3>
 <p>
   QR code sessions:
 </p>
@@ -178,7 +316,7 @@
   <li>Are automatically purged from our systems <strong>30 days after expiration</strong></li>
 </ul>
 
-<h3>5.4 User Responsibilities for QR Codes</h3>
+<h3>6.4 User Responsibilities for QR Codes</h3>
 <p>
   You are responsible for:
 </p>
@@ -190,7 +328,42 @@
   <li>Understanding that expired QR codes will no longer function</li>
 </ul>
 
-<h3>5.5 Prohibited Uses of QR Codes</h3>
+  <h3>6.5 Verification Requirement for QR Activation</h3>
+<p>
+  You acknowledge and agree that:
+</p>
+<ul>
+  <li>
+    QR code activation is a <strong>privilege granted only to verified accounts</strong>
+  </li>
+  <li>
+    Verification is required <strong>each time</strong> you wish to activate a QR code, 
+    though typically only once per account
+  </li>
+  <li>
+    We may temporarily <strong>suspend verification status</strong> if suspicious 
+    activity is detected
+  </li>
+  <li>
+    Lost verification status requires <strong>re-verification</strong> to resume 
+    QR activation capabilities
+  </li>
+</ul>
+
+<p>
+  <strong>Verification Exceptions</strong>: In rare cases, we may provide temporary 
+  activation access to unverified accounts for:
+</p>
+<ul>
+  <li>Beta testing programs with controlled access</li>
+  <li>Technical demonstrations with prior approval</li>
+  <li>Educational or non-profit events with verified credentials</li>
+</ul>
+<p>
+  Such exceptions require <strong>prior written approval</strong> from JukeBox App.
+</p>
+
+<h3>6.6 Prohibited Uses of QR Codes</h3>
 <p>
   You may not use QR codes generated by the App for:
 </p>
@@ -200,11 +373,13 @@
   <li>Spamming, phishing, or malicious redirects</li>
   <li>Bulk generation for resale or distribution to third parties</li>
   <li>Circumventing the credit system through automated means</li>
+  <li>Attempting to activate QR codes without proper account verification</li>
+  <li>Sharing verification codes or methods to bypass security measures</li>
 </ul>
 
-  <h2>6. JukeShorts Video Content</h2>
+  <h2>7. JukeShorts Video Content</h2>
 
-<h3>6.1 Content Guidelines and Restrictions</h3>
+<h3>7.1 Content Guidelines and Restrictions</h3>
 <p>
   By uploading content to JukeShorts, you agree to the following technical and content restrictions:
 </p>
@@ -216,7 +391,7 @@
   <li><strong>Upload limits</strong>: Maximum 1 video per day per user, with additional total upload restrictions</li>
 </ul>
 
-<h3>6.2 Content Ownership and Licensing</h3>
+<h3>7.2 Content Ownership and Licensing</h3>
 <p>
   By uploading content to JukeShorts, you represent and warrant that:
 </p>
@@ -236,7 +411,7 @@
   <li>Retain content for as long as you choose to keep it published</li>
 </ul>
 
-<h3>6.3 Content Moderation and Removal</h3>
+<h3>7.3 Content Moderation and Removal</h3>
 <p>
   All videos uploaded to JukeShorts:
 </p>
@@ -250,7 +425,7 @@
   You retain the right to delete your own videos at any time through the App interface.
 </p>
 
-<h3>6.4 Prohibited Content</h3>
+<h3>7.4 Prohibited Content</h3>
 <p>
   You may not upload content that:
 </p>
@@ -263,7 +438,7 @@
   <li>Is spam, misleading, or commercially promotional without authorization</li>
 </ul>
 
-<h3>6.5 Technical Processing</h3>
+<h3>7.5 Technical Processing</h3>
 <p>
   You acknowledge and agree that:
 </p>
@@ -274,7 +449,7 @@
   <li>Upload attempts are tracked and limited to maintain service stability</li>
 </ul>
 
-<h3>6.6 User Responsibilities</h3>
+<h3>7.6 User Responsibilities</h3>
 <p>
   You are responsible for:
 </p>
@@ -287,7 +462,8 @@
 
 <h2>7. Exceptional Refunds</h2>
 <p>
-  While Credits are <strong>non-refundable by default</strong>, JukeBox App <strong>may</strong> issue a refund in <strong>exceptional cases</strong>, such as:
+  While Credits are <strong>non-refundable by default</strong>, JukeBox App <strong>may</strong> 
+  issue a refund in <strong>exceptional cases</strong>, such as:
 </p>
 <ul>
   <li>
@@ -302,6 +478,11 @@
     <strong>QR Code Generation Failure</strong>: If the App fails to generate a functional QR code
     despite Credit consumption, and the issue cannot be resolved technically.
   </li>
+  <li>
+    <strong>Verification System Failure</strong>: If the account verification system prevents 
+    legitimate access despite correct code entry, and the issue cannot be resolved within 
+    48 hours of support contact.
+  </li>
 </ul>
 <p>
   <strong>Refunds will NOT be issued for</strong>:
@@ -313,7 +494,15 @@
   <li>Expired QR code sessions</li>
   <li>Lost or deleted PDF documents (generated locally on your device)</li>
   <li>Inability to print or distribute generated QR codes</li>
-</ul>
+  <li>Inability to complete account verification due to:
+    <ul>
+      <li>Inaccessible email address (spam folder, wrong email provided)</li>
+      <li>Failure to enter verification code within 10-minute window</li>
+      <li>Exceeding 3 failed verification attempts</li>
+      <li>Technical issues on user's device or email service</li>
+    </ul>
+  </li>
+</ul>  
 <p>
   To request an exceptional refund, contact <a href="mailto:support@jukeboxapp.eu">support@jukeboxapp.eu</a>
   within <strong>7 days</strong> of the transaction, providing:
@@ -336,18 +525,26 @@
 
 <h3>9. Prohibited Uses</h3>
 <p>
-  Credits <strong>cannot</strong> be:
+  Credits and Account Features <strong>cannot</strong> be:
 </p>
 <ul>
   <li>Transferred to other users or accounts</li>
   <li>Exchanged for cash or other currencies</li>
   <li>Used for commercial or illegal purposes</li>
   <li>Used to generate QR codes for third-party commercial events without authorization</li>
+  <li>Used to circumvent or bypass the account verification system</li>
+  <li>Shared among multiple users to avoid individual verification requirements</li>
 </ul>
 <p>
-  We reserve the right to <strong>suspend</strong> accounts for fraudulent Credit use or
-  violation of QR code usage terms.
+  We reserve the right to <strong>suspend</strong> accounts for:
 </p>
+<ul>
+  <li>Fraudulent Credit use or purchase</li>
+  <li>Violation of QR code usage terms</li>
+  <li>Attempts to bypass account verification</li>
+  <li>Sharing verification codes or methods</li>
+  <li>Creating multiple accounts to avoid verification (sockpuppet accounts)</li>
+</ul>
 
 <h2>10. PDF Document Terms</h2>
 
@@ -383,18 +580,72 @@
   <li>Choosing appropriate print settings and paper quality</li>
   <li>Distributing QR codes in compliance with local laws and venue policies</li>
 </ul>
-  
-  <h2>11. Disclaimer of Warranty</h2>
-  <p>The App is provided "as is" without warranties of any kind, either express or implied. Your use of the App, including QR code generation and PDF creation, is at your own risk. We are not liable for:</p>
-  <ul>
-    <li>QR codes that fail to scan due to print quality, lighting conditions, or device limitations</li>
-    <li>PDF documents that do not meet specific printing requirements</li>
-    <li>Event disruptions caused by QR code malfunctions</li>
-    <li>Damages arising from the use or inability to use QR code features</li>
-    <li>Loss of PDF documents generated locally on your device</li>
-  </ul>
 
-  <h2>12. Limitation of Liability</h2>
+  <h2>11. Account Security and Verification Appeals</h2>
+
+<h3>11.1 Verification Failure Resolution</h3>
+<p>
+  If you encounter issues with account verification:
+</p>
+<ol>
+  <li>
+    <strong>First, check your email</strong>: Including spam/junk folders
+  </li>
+  <li>
+    <strong>Verify email address</strong>: Ensure the registered email is correct and accessible
+  </li>
+  <li>
+    <strong>Wait 10 minutes</strong>: Before requesting a new verification code
+  </li>
+  <li>
+    <strong>Contact support</strong>: If issues persist for more than 24 hours
+  </li>
+</ol>
+
+<h3>11.2 Manual Verification Process</h3>
+<p>
+  In cases of persistent verification issues, we may offer manual verification subject to:
+</p>
+<ul>
+  <li>Proof of identity through alternative means</li>
+  <li>Review of account activity and history</li>
+  <li>Verification of email domain ownership (for business accounts)</li>
+  <li>Additional security questions or documentation</li>
+</ul>
+<p>
+  Manual verification decisions are at our <strong>sole discretion</strong> and may take 
+  <strong>3-5 business days</strong> to process.
+</p>
+
+<h3>11.3 Verification for Users with Disabilities</h3>
+<p>
+  Users with disabilities that prevent email verification may contact support for 
+  <strong>alternative verification methods</strong>. Alternative methods may include:
+</p>
+<ul>
+  <li>Phone verification (where available)</li>
+  <li>Manual review with documentation</li>
+  <li>Temporary access grants with enhanced monitoring</li>
+</ul>
+<p>
+  Alternative verification requires <strong>prior approval</strong> and may involve 
+  additional security measures.
+</p>
+  
+  <h2>12. Disclaimer of Warranty</h2>
+    <p>The App is provided "as is" without warranties of any kind, either express or implied. Your use of the App, including QR code generation and PDF creation, is at your own risk. We are not liable for:</p>
+    <ul>
+      <li>QR codes that fail to scan due to print quality, lighting conditions, or device limitations</li>
+      <li>PDF documents that do not meet specific printing requirements</li>
+      <li>Event disruptions caused by QR code malfunctions</li>
+      <li>Damages arising from the use or inability to use QR code features</li>
+      <li>Loss of PDF documents generated locally on your device</li>
+      <li>Verification code delivery failures due to email service issues</li>
+      <li>Inability to verify account due to technical limitations on user's device</li>
+      <li>Delays in verification code delivery or processing</li>
+    </ul>
+
+  <h2>13. Limitation of Liability</h2>
   <p>To the maximum extent permitted by law, JukeBox App shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:</p>
   <ul>
     <li>Loss of profits, data, or business opportunities related to QR code usage</li>
@@ -404,13 +655,14 @@
   </ul>
   <p>Our total liability for any claims related to QR code features shall not exceed the amount paid by you for Credits used in the affected session.</p>
 
-  <h2>13. Modifications</h2>
+  <h2>14. Modifications</h2>
   <p>We may update this Agreement at any time. Continued use of the App, including QR code features, constitutes acceptance of the updated terms.</p>
 
-  <h2>14. Governing Law</h2>
+  <h2>15. Governing Law</h2>
   <p>This Agreement is governed by the laws of Italy. Jurisdiction: Frosinone.</p>
 
-  <h2>15. Contact</h2>
+  <h2>16. Contact</h2>
   <p>Email: info@jukeboxapp.eu </p>
 </body>
 </html>
+
