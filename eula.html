@@ -55,6 +55,31 @@
     or QR-only PDF (minimal format).
   </li>
 </ul>
+
+  <li>
+    <strong>Tips & Donations</strong>: A feature allowing users to send and receive 
+    monetary tips through the platform. Tips are processed via Stripe Connect with 
+    automatic deduction of a 4% platform commission and applicable Stripe processing fees.
+  </li>
+  <li>
+    <strong>Stripe Connect Account</strong>: A connected Stripe Express account that 
+    enables users to receive payouts from tips. Requires completion of Stripe's 
+    onboarding process including identity verification.
+  </li>
+  <li>
+    <strong>Platform Commission</strong>: A 4% fee deducted from each tip received, 
+    which constitutes JukeBox App's revenue for providing the tipping infrastructure.
+  </li>
+  <li>
+    <strong>Direct Charge</strong>: A Stripe Connect feature applied to tips under €5 
+    where the donor pays all Stripe processing fees in addition to the tip amount.
+  </li>
+  <li>
+    <strong>Payout Schedule</strong>: The timing of fund transfers from Stripe to 
+    the recipient's bank account, typically following a 7-day rolling schedule for 
+    Italian accounts as determined by Stripe.
+  </li>
+</ul>
   
   <h2>1. License Grant</h2>
   <p>This Agreement grants you a limited, non-exclusive, non-transferable license to use the JukeBox App for personal, non-commercial purposes, in accordance with these terms.</p>
@@ -263,6 +288,191 @@
     anti-bot regulations
   </li>
 </ul>
+
+  <h2>Tips & Donations via Stripe Connect</h2>
+
+<h3>1. Service Overview</h3>
+<p>
+  The Tips feature enables users to send and receive monetary tips. By using this feature, 
+  you acknowledge and agree to the following terms:
+</p>
+<ul>
+  <li>
+    Tips are processed through <a href="https://stripe.com/connect" target="_blank">Stripe Connect</a>, 
+    a third-party payment processor
+  </li>
+  <li>
+    JukeBox App acts as a platform facilitating connections between donors and recipients
+  </li>
+  <li>
+    We deduct a <strong>4% platform commission</strong> from each tip received
+  </li>
+  <li>
+    Additional <strong>Stripe processing fees</strong> apply as detailed below
+  </li>
+</ul>
+
+<h3>2. Eligibility to Receive Tips</h3>
+<p>
+  To receive tips through JukeBox App, you must:
+</p>
+<ul>
+  <li>Be at least 18 years old (or age of majority in your jurisdiction)</li>
+  <li>Complete Stripe Connect onboarding, including identity verification</li>
+  <li>Have a valid bank account in a country supported by Stripe Connect</li>
+  <li>Comply with Stripe's <a href="https://stripe.com/connect-account/legal" target="_blank">Terms of Service</a></li>
+  <li>Maintain an account in good standing with JukeBox App</li>
+</ul>
+<p>
+  <strong>Important</strong>: Stripe may impose additional requirements based on your 
+  location, business type, or transaction volume.
+</p>
+
+<h3>3. Fee Structure</h3>
+<p>
+  <strong>A. Platform Commission</strong>: JukeBox App deducts <strong>4%</strong> from 
+  each tip received. This commission is:
+</p>
+<ul>
+  <li>Non-negotiable and applied to all tips</li>
+  <li>Deducted automatically before funds are transferred to your Stripe account</li>
+  <li>Our sole revenue from the Tips feature</li>
+</ul>
+
+<p>
+  <strong>B. Stripe Processing Fees</strong>: Standard Stripe fees apply:
+</p>
+<ul>
+  <li>European rates: <strong>1.4% + €0.25</strong> per successful transaction</li>
+  <li>Fees vary by country and payment method</li>
+  <li>Complete fee details: <a href="https://stripe.com/pricing" target="_blank">Stripe Pricing</a></li>
+</ul>
+
+<p>
+  <strong>C. Fee Application Method</strong>:
+</p>
+<ul>
+  <li>
+    <strong>Tips under €5</strong>: "Direct Charge" applies. Donor pays:
+    <ul>
+      <li>Tip amount + full Stripe processing fees</li>
+      <li>Recipient receives: Tip amount - 4% platform commission</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Tips €5 and above</strong>: Standard shared fees apply. Recipient receives:
+    <ul>
+      <li>Tip amount - Stripe processing fees - 4% platform commission</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>4. Payouts and Timing</h3>
+<p>
+  <strong>A. Payout Schedule</strong>:
+</p>
+<ul>
+  <li>Italian accounts: <strong>7-day rolling schedule</strong> (standard Stripe Connect for Italy)</li>
+  <li>Other countries: Follow Stripe's regional payout schedules</li>
+  <li>Payout currency: EUR (Euro) only</li>
+</ul>
+
+<p>
+  <strong>B. Minimum Payout Amount</strong>: None. All eligible balances are paid out 
+  according to the schedule above.
+</p>
+
+<p>
+  <strong>C. Payout Management</strong>:
+</p>
+<ul>
+  <li>Payout timing is controlled by Stripe, not JukeBox App</li>
+  <li>We cannot expedite or delay individual payouts</li>
+  <li>Payout issues must be resolved through Stripe's support channels</li>
+</ul>
+
+<h3>5. Tax Responsibilities</h3>
+<p>
+  <strong>Important Tax Disclaimer</strong>: You are solely responsible for:
+</p>
+<ul>
+  <li>Reporting all tip income to relevant tax authorities</li>
+  <li>Paying any applicable income taxes, VAT, or other taxes</li>
+  <li>Maintaining accurate records of your tip earnings</li>
+  <li>Understanding and complying with tax regulations in your jurisdiction</li>
+</ul>
+<p>
+  JukeBox App:
+</p>
+<ul>
+  <li>Does not withhold taxes from your tips</li>
+  <li>Does not issue tax forms (unless legally required)</li>
+  <li>Provides transaction history for your record-keeping</li>
+  <li>Cannot provide tax advice</li>
+</ul>
+
+<h3>6. User Obligations for Tips Feature</h3>
+<p>
+  You agree not to use the Tips feature for:
+</p>
+<ul>
+  <li>Money laundering or illegal financial activities</li>
+  <li>Circumventing payment processor restrictions</li>
+  <li>Fraudulent or deceptive practices</li>
+  <li>Selling goods or services (this is for tips/donations only)</li>
+  <li>Transactions involving prohibited items or services</li>
+</ul>
+
+<h3>7. Dispute Resolution</h3>
+<p>
+  <strong>A. Payment Disputes</strong>: Managed through Stripe's dispute resolution process. 
+  We may provide relevant transaction information to Stripe to assist with disputes.
+</p>
+
+<p>
+  <strong>B. Refund Policy for Tips</strong>:
+</p>
+<ul>
+  <li>Tips are <strong>generally non-refundable</strong></li>
+  <li>Refunds may be issued in exceptional circumstances at our discretion</li>
+  <li>Platform commissions on refunded transactions are also refunded</li>
+  <li>Refund requests must be made within 30 days of the transaction</li>
+</ul>
+
+<h3>8. Account Suspension or Termination</h3>
+<p>
+  We reserve the right to suspend or terminate tip functionality for accounts that:
+</p>
+<ul>
+  <li>Violate these Terms or Stripe's Terms of Service</li>
+  <li>Are flagged by Stripe for suspicious activity</li>
+  <li>Fail to maintain required verification status with Stripe</li>
+  <li>Engage in fraudulent or deceptive practices</li>
+  <li>Receive chargebacks or disputes above acceptable thresholds</li>
+</ul>
+
+<h3>9. Limitations of Liability for Tips</h3>
+<p>
+  JukeBox App is not liable for:
+</p>
+<ul>
+  <li>Stripe's actions, errors, or service interruptions</li>
+  <li>Bank delays, rejections, or fees imposed by financial institutions</li>
+  <li>Tax liabilities or penalties incurred by users</li>
+  <li>Fraudulent tips or chargebacks</li>
+  <li>Exchange rate fluctuations for non-EUR transactions</li>
+  <li>Loss of funds due to incorrect bank information provided to Stripe</li>
+</ul>
+<p>
+  Our maximum liability for issues related to the Tips feature is limited to the 
+  total platform commissions we collected from your account in the preceding 6 months.
+</p>
+
+<h3>10. Changes to Tips Terms</h3>
+<p>
+  We may modify these Tips terms, including fee structure, with 30 days' notice. 
+  Continued use of the Tips feature after changes constitutes acceptance.
+</p>
 
 <h2>6. QR Code Generation and Management</h2>
 
@@ -524,9 +734,7 @@
 </p>
 
 <h3>9. Prohibited Uses</h3>
-<p>
-  Credits and Account Features <strong>cannot</strong> be:
-</p>
+<p>Credits, Account Features, and Tips feature <strong>cannot</strong> be:</p>
 <ul>
   <li>Transferred to other users or accounts</li>
   <li>Exchanged for cash or other currencies</li>
@@ -534,6 +742,10 @@
   <li>Used to generate QR codes for third-party commercial events without authorization</li>
   <li>Used to circumvent or bypass the account verification system</li>
   <li>Shared among multiple users to avoid individual verification requirements</li>
+  <li>Used to launder money or conduct illegal financial transactions</li>
+  <li>Used to circumvent Stripe's prohibited businesses list</li>
+  <li>Used for transactions involving prohibited items or services</li>
+  <li>Used to solicit tips under false pretenses</li>
 </ul>
 <p>
   We reserve the right to <strong>suspend</strong> accounts for:
@@ -544,6 +756,10 @@
   <li>Attempts to bypass account verification</li>
   <li>Sharing verification codes or methods</li>
   <li>Creating multiple accounts to avoid verification (sockpuppet accounts)</li>
+  <li>Violation of Stripe's acceptable use policies</li>
+  <li>Excessive chargebacks or payment disputes</li>
+  <li>Suspicious tip patterns suggesting fraudulent activity</li>
+  <li>Failure to maintain Stripe Connect account in good standing</li>
 </ul>
 
 <h2>10. PDF Document Terms</h2>
@@ -633,7 +849,7 @@
 </p>
   
   <h2>12. Disclaimer of Warranty</h2>
-    <p>The App is provided "as is" without warranties of any kind, either express or implied. Your use of the App, including QR code generation and PDF creation, is at your own risk. We are not liable for:</p>
+    <p>The App is provided "as is" without warranties of any kind, either express or implied. Your use of the App, including QR code generation, PDF creation, and Tips feature, is at your own risk. We are not liable for:</p>
     <ul>
       <li>QR codes that fail to scan due to print quality, lighting conditions, or device limitations</li>
       <li>PDF documents that do not meet specific printing requirements</li>
@@ -643,6 +859,12 @@
       <li>Verification code delivery failures due to email service issues</li>
       <li>Inability to verify account due to technical limitations on user's device</li>
       <li>Delays in verification code delivery or processing</li>
+      <li>Stripe Connect onboarding failures or verification rejections</li>
+      <li>Payment processing delays, failures, or errors by Stripe</li>
+      <li>Bank transfer delays, rejections, or fees</li>
+      <li>Tax liabilities arising from tip income</li>
+      <li>Chargebacks, disputes, or fraudulent tips</li>
+      <li>Changes to Stripe's terms, fees, or available countries</li>
     </ul>
 
   <h2>13. Limitation of Liability</h2>
@@ -652,8 +874,12 @@
     <li>Costs of reprinting or redistributing QR codes</li>
     <li>Damages resulting from event cancellations or disruptions</li>
     <li>Issues arising from third-party QR scanner applications</li>
+    <li>Lost tip income due to Stripe service interruptions</li>
+    <li>Bank fees, currency conversion losses, or tax penalties</li>
+    <li>Damages from payment disputes or chargebacks</li>
+    <li>Loss of funds due to incorrect Stripe account configuration</li>
   </ul>
-  <p>Our total liability for any claims related to QR code features shall not exceed the amount paid by you for Credits used in the affected session.</p>
+  <p>Our total liability for any claims related to the Tips feature shall not exceed the total platform commissions we collected from your account in the preceding 6 months.</p>
 
   <h2>14. Modifications</h2>
   <p>We may update this Agreement at any time. Continued use of the App, including QR code features, constitutes acceptance of the updated terms.</p>
@@ -665,4 +891,5 @@
   <p>Email: info@jukeboxapp.eu </p>
 </body>
 </html>
+
 
