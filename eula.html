@@ -6,7 +6,7 @@
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px;">
   <h1>End-User License Agreement (EULA) – JukeBox App</h1>
-  <p><strong>Last updated:</strong> January 31, 2026</p>
+  <p><strong>Last updated:</strong> February 8, 2026</p>
   <p>This End-User License Agreement ("Agreement") governs the use of the mobile application <strong>JukeBox App</strong> ("App") provided by <strong>Corrado R. (CeKTa)</strong>. By installing or using the App, you agree to the terms of this Agreement. If you do not agree to these terms, do not use the App.</p>
   
   <h3>New Definitions</h3>
@@ -78,6 +78,17 @@
     <strong>Payout Schedule</strong>: The timing of fund transfers from Stripe to 
     the recipient's bank account, typically following a 7-day rolling schedule for 
     Italian accounts as determined by Stripe.
+  </li>
+  <li>
+    <strong>Automatic Message Translation</strong>: A feature that automatically translates 
+    private messages and song request details when they originate from QR codes in languages 
+    different from the user's app language setting. Translations are provided via Google 
+    Cloud Translation API with privacy-preserving optimizations.
+  </li>
+  <li>
+    <strong>Translation Cache</strong>: Temporary local storage of translated messages in 
+    the user's browser to avoid repeated API calls for the same content, automatically 
+    cleared upon logout or browser data clearance.
   </li>
 </ul>
   
@@ -587,6 +598,142 @@
   <li>Sharing verification codes or methods to bypass security measures</li>
 </ul>
 
+  <h2>7. Automatic Message Translation Service</h2>
+
+<h3>7.1 Service Description</h3>
+<p>
+  JukeBox App provides automatic translation of private messages and song request details 
+  through Google Cloud Translation API. By using the App, you acknowledge and agree that:
+</p>
+<ul>
+  <li>
+    Messages are translated <strong>only when necessary</strong>: When the language of the 
+    originating QR code differs from your selected app language setting
+  </li>
+  <li>
+    <strong>No translation occurs</strong> when languages are identical, optimizing 
+    performance and minimizing data processing
+  </li>
+  <li>
+    Song titles and artist names are <strong>not translated</strong> to preserve 
+    artistic integrity across languages
+  </li>
+  <li>
+    Translations are provided "as is" without guarantees of accuracy or completeness
+  </li>
+</ul>
+
+<h3>7.2 Data Processing for Translations</h3>
+<p>
+  When automatic translation is triggered:
+</p>
+<ul>
+  <li>
+    Only the <strong>text content</strong> requiring translation is processed
+  </li>
+  <li>
+    Message metadata (sender, timestamp, QR session info) remains untranslated and private
+  </li>
+  <li>
+    Translated text may be <strong>cached locally</strong> in your browser for up to 24 hours 
+    to improve performance
+  </li>
+  <li>
+    We enforce a <strong>5,000-character limit</strong> per translation request
+  </li>
+</ul>
+
+<h3>7.3 Third-Party Translation Service</h3>
+<p>
+  Translation services are provided by <strong>Google Cloud Translation API</strong>. You agree that:
+</p>
+<ul>
+  <li>
+    Google may process and retain translated text according to their 
+    <a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank">Privacy Policy</a>
+  </li>
+  <li>
+    We are not responsible for Google's handling of data once transmitted for translation
+  </li>
+  <li>
+    Translation quality, availability, and supported languages are determined by Google
+  </li>
+</ul>
+
+<h3>7.4 User Controls and Options</h3>
+<p>
+  You maintain the following controls over translations:
+</p>
+<ul>
+  <li>
+    <strong>View Original</strong>: Always available to see the untranslated message
+  </li>
+  <li>
+    <strong>Retranslate</strong>: Manually trigger fresh translations if needed
+  </li>
+  <li>
+    <strong>Language Preference</strong>: Control which languages trigger translations 
+    via your app language setting
+  </li>
+</ul>
+
+<h3>7.5 Translation Accuracy Disclaimer</h3>
+<p>
+  You acknowledge and agree that:
+</p>
+<ul>
+  <li>
+    Automatic translations may contain <strong>errors, inaccuracies, or omissions</strong>
+  </li>
+  <li>
+    Cultural nuances, idioms, or context may be <strong>lost in translation</strong>
+  </li>
+  <li>
+    We provide no warranty regarding translation accuracy or suitability
+  </li>
+  <li>
+    You should verify critical information through the "Show Original" feature
+  </li>
+</ul>
+
+<h3>7.6 Prohibited Uses</h3>
+<p>
+  You may not use the translation service for:
+</p>
+<ul>
+  <li>
+    Translating sensitive, confidential, or legally privileged information
+  </li>
+  <li>
+    Attempting to circumvent language-based content restrictions
+  </li>
+  <li>
+    Automated bulk translation outside the intended use case
+  </li>
+  <li>
+    Any purpose that violates Google's Terms of Service for Translation API
+  </li>
+</ul>
+
+<h3>7.7 Service Limitations</h3>
+<p>
+  The translation service:
+</p>
+<ul>
+  <li>
+    Is subject to availability and rate limits imposed by Google
+  </li>
+  <li>
+    May be temporarily unavailable due to maintenance or technical issues
+  </li>
+  <li>
+    Supports only the languages explicitly listed in our Privacy Policy
+  </li>
+  <li>
+    May have character or request limits that we cannot control
+  </li>
+</ul>
+
   <h2>7. JukeShorts Video Content</h2>
 
 <h3>7.1 Content Guidelines and Restrictions</h3>
@@ -865,6 +1012,24 @@
       <li>Tax liabilities arising from tip income</li>
       <li>Chargebacks, disputes, or fraudulent tips</li>
       <li>Changes to Stripe's terms, fees, or available countries</li>
+      <li>
+          Translation errors, inaccuracies, or omissions in automatically translated messages
+        </li>
+        <li>
+          Loss of meaning, cultural context, or nuance in translated content
+        </li>
+        <li>
+          Unavailability or limitations of Google Translation API services
+        </li>
+        <li>
+          Delays or failures in message translation due to third-party service issues
+        </li>
+        <li>
+          Misunderstandings or miscommunications resulting from translation errors
+        </li>
+        <li>
+          Content that becomes inappropriate or offensive due to translation errors
+        </li>
     </ul>
 
   <h2>13. Limitation of Liability</h2>
@@ -878,6 +1043,21 @@
     <li>Bank fees, currency conversion losses, or tax penalties</li>
     <li>Damages from payment disputes or chargebacks</li>
     <li>Loss of funds due to incorrect Stripe account configuration</li>
+     <li>
+        Damages resulting from reliance on inaccurate or misleading translations
+      </li>
+      <li>
+        Loss of business opportunities due to translation errors in communications
+      </li>
+      <li>
+        Reputational harm caused by inappropriate or incorrect translations
+      </li>
+      <li>
+        Legal consequences of misunderstandings arising from translation errors
+      </li>
+      <li>
+        Costs associated with verifying or correcting automated translations
+      </li>
   </ul>
   <p>Our total liability for any claims related to the Tips feature shall not exceed the total platform commissions we collected from your account in the preceding 6 months.</p>
 
@@ -891,6 +1071,7 @@
   <p>Email: info@jukeboxapp.eu </p>
 </body>
 </html>
+
 
 
 
